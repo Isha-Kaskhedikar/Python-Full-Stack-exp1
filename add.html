@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Multiple-Line Input Control</title>
+   </head>
+	<style>
+        body {
+            background-image: url(https://datenschutz-agentur.de/wp-content/uploads/content/Gastronomie-1024x576.jpg);
+            font-family: Verdana;
+            font-size: 20px;
+            -webkit-background-size:cover;
+background-size:cover;
+background-position: center center;
+background-attachment:fixed;
+        }
+   form {
+            background-color: rgb(255, 254, 166);
+            max-width: 500px;
+            margin: 30px auto;
+            padding: 30px 20px;
+            color: rgb(37, 39, 126);
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        button {
+            background-color: #a0eb9e;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 20px;
+            display: block;
+            width: 40%;
+        }
+    </style>
+   <body>
+    <form>
+        Type:
+        <input type = "radio" name = "type" value = "breakfast"> Breakfast
+        <input type = "radio" name = "type" value = "Lunch"> Lunch
+        <input type = "radio" name = "type" value = "Snacks"> Snacks
+        <input type = "radio" name = "type" value = "Dinner"> Dinner
+     <!-- </form>
+      <form> -->
+          <br>
+         Name : <br />
+         <textarea rows = "1" cols = "20" style="font-size: 17px;">
+         </textarea>
+      <!-- </form>
+      <form> -->
+        <br><br>
+      ingredients : <br />
+      <textarea rows = "5" cols = "50" style="font-size: 17px;">
+      </textarea>
+   <!-- </form>
+   <form> -->
+    <br><br>
+   Procedure: <br />
+   <textarea rows = "9" cols = "50" style="font-size: 17px;">
+   </textarea>
+   <br>
+   <br>
+   Image link : <br />
+   <textarea>
+   </textarea>
+   <br><br>
+   <button type="submit" value="submit"> SUBMIT </button>
+</form>
+   </body>
+	
+</html>

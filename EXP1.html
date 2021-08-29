@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" herf="exp1.css">
+    <title>Document</title>
+</head>
+<style>
+body{
+margin: 0;
+padding: 0;
+font-family: lato;
+}
+div{
+width: 100%;
+height: 100vh;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+.first{
+background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(https://th.bing.com/th/id/R.f4782c7a981f5de8608beedbe2b09ff1?rik=ANvNyUN3DjbstQ&riu=http%3a%2f%2f4.bp.blogspot.com%2f-COkAbtBiV6o%2fVjX-mw4LvwI%2fAAAAAAAAG8o%2fKHp1iil4xT8%2fs1600%2fDSC_0571.JPG&ehk=lbDFNTOjrZwTDrx5Sfd7ihy%2f4chS6qNYOWbOCh%2bUHrs%3d&risl=&pid=ImgRaw&r=0.jpg);
+-webkit-background-size:cover;
+background-size:cover;
+background-position: center center;
+background-attachment:fixed;
+}
+.second{
+background-image: url(https://th.bing.com/th/id/OIP.OzEsWcGI1PSFTz5Ip9CvRAHaEo?pid=ImgDet&rs=1.jpg);
+-webkit-background-size:cover;
+background-size:cover;
+background-position: center center;
+background-attachment:fixed;
+}
+.third{
+background-image: url(https://th.bing.com/th/id/R.c4af6cf86577cdc33dd7566e46483341?rik=svcWQ4tvlERAag&riu=http%3a%2f%2ffarm4.staticflickr.com%2f3794%2f10867652645_e7886094cc_o.jpg&ehk=ivKtK19V4%2fnB1c%2b8HV4L7%2fsGu74q2hjlftMcscaui24%3d&risl=&pid=ImgRaw&r=0.jpg);
+-webkit-background-size:cover;
+background-size:cover;
+background-position: center center;
+background-attachment:fixed;
+}
+.fourth{
+background-image: url(https://th.bing.com/th/id/OIP.grosmt1d7cxTREothmhEnQHaE7?w=290&h=193&c=7&o=5&dpr=1.25&pid=1.7.jpg);
+-webkit-background-size:cover;
+background-size:cover;
+background-position: center center;
+background-attachment:fixed;
+}
+.fifth{
+background-image:url(https://th.bing.com/th/id/OIP.7mw7ZXFxhSaXw0_nUOi6cQHaE7?w=259&h=180&c=7&o=5&dpr=1.25&pid=1.7.jpg);
+-webkit-background-size:cover;
+background-size:cover;
+background-position: center center;
+background-attachment:fixed;
+}
+
+.text-area{/*FOR HEADINGS*/
+padding:80px 0;
+height: auto;
+text-align: center;
+background: rgb(59, 2, 2);
+}
+.text-area h2 {
+font-size: 40px;
+color: #fff;
+margin: 0 0 20px;
+text-transform: uppercase;
+}
+.text-area p {
+color: #fff;
+font-size: 18px;
+width: 50%;
+margin: auto;
+line-height: 1.6;
+}
+.wrapper{
+    width:auto;
+    /*margin: auto;*/
+    align-self: center;
+}
+
+.navpg1{
+    float: left;
+    list-style: none;
+    margin-top: 34%;
+    margin-left:27%;
+    align-self: center;
+    text-align: center;
+}
+.navpg1 li{
+    display: inline-block;
+}
+.navpg1 li a {
+color: #fff;
+text-decoration: none;
+padding: 5px 20px;
+font-family: poppins;
+font-size: 16px;
+text-transform: uppercase;
+}
+.navpg1 li a:hover{
+    background: #fff;
+    color: #333;
+}
+
+.welcome-text{
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    margin: 14% 30%;
+    text-align: center;
+}
+.welcome-text h1{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+.welcome-text h2{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+}
+.welcome-text a{
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 12px;
+    display: inline-block;
+    color: #fff;
+}
+.welcome-text a:hover{
+    background: #fff;
+    color: #333;
+}
+
+.slider {
+  width: 1500px;
+  height: 700px;
+  display: flex;
+  overflow-x: auto;
+  padding: 20PX;
+  padding-top: 40px;
+}
+.slide {
+  width: 500px;
+  flex-shrink: 0;
+  height: 100%;
+  border-radius: 20px;
+}
+.slidep2{
+  width: 550px;
+  flex-shrink: 0;
+  height: 100%;
+  border-radius: 20px;
+}
+.slidep3{
+  width: 450px;
+  flex-shrink: 0;
+  height: 100%;
+  border-radius: 20px;
+}
+.slidep4{
+  width: 550px;
+  flex-shrink: 0;
+  height: 100%;
+  border-radius: 20px;
+}
+/*resposive*/
+
+@media (max-width:600px){
+img {
+width: auto ;
+}
+
+}
+</style>
+
+<header>
+ 
+<div class="welcome-text">
+        <h1>
+khana khazana</h1>
+<h2>Find an apron and get cooking!</h2>
+<!--<a href="#">Contact US</a>-->
+    </div>
+</header>
+
+<body>
+    <div class="first">
+        <div class="wrapper">
+            <ul class="navpg1">
+                <li><a href="#bfast">BREAKFAST</a></li>
+                <li><a href="#lunch">LUNCH</a></li>
+                <li><a href="#snacks">SNACKS</a></li>
+                <li><a href="#din">DINNER</a></li>
+                <li><a href="C:\Users\91700\OneDrive\Desktop\VS\Python full stack\add.html">ADD NEW RECIPE</a></li>
+            </ul>
+            <a style="background: linear-gradient(315deg, rgba(34,193,195,1) 0%, rgb(253, 45, 191) 100%); float: left;
+            margin-top: 0%; padding: 5px 20px; margin-left:44%; align-self: center; color: rgb(17, 17, 99);
+            text-align: center; text-decoration: none;" href="C:\Users\91700\OneDrive\Desktop\VS\Python full stack\party.html">PARTY SPECIAL</a>
+            </div>
+            </div>
+
+    <div class="text-area">
+        <a name="bfast">
+    <h2>
+    Breakfast</h2>
+    <p>One shoult not attend even the end of the world without a good breakfast</p><p>-Robert A. Heinlein</p>
+    </div>
+</a>
+<!-- ---------------------------------------------------------------------------------------------------------------------------------->
+<!-- ---------------------------------------------------------------------------------------------------------------------------------->
+<!-- ---------------------------------------------------------------------------------------------------------------------------------->
+    <div class="second">
+        <div class="slider">
+            <div class="slide" style="font-size: 20px; background-color: rgb(146, 219, 253); margin: 0 10px 0 10px; padding: 10px;font-size: 16px;" id="slide-1"><h1 style="text-align: center; color: rgb(82, 8, 255);">UPMA</h1>INGREDIENTS <br> ½ cup Semolina / Sooji
+                1.5 cups Water, 1 Small Onion, ½ tsp Mustard Seeds, ½ tsp Chana Dal, ½ tsp Urad Dal, 2-3 tbsp Peanuts, 10 Cashews, 1-2 Green Chillies, finely chopped, 1 inch piece Ginger-finely chopped or grated, 1 Red Chilli (optional), A Sprig Curry Leaves, 3 tbsp Oil, 1 tbsp Ghee (clarified butter), Salt to taste<br><br>STEPS<br>Dry roast the semolina or sooji on a low flame for about 5 minutes. Keep it aside.
+                Heat oil in a pan and add the mustard seeds, urad dal, chana dal and peanuts. Saute until they are light brown color.
+                Add the cashew nuts, finely chopped green chillies, chopped ginger and red chilli and fry until brown color.
+                Add the curry leaves and saute for a few seconds.
+                Add the chopped onion and saute until they are translucent.
+                Add water and salt and bring it to a rolling boil.
+                Slowly add the roasted rava or semolina and stir continuously to avoid any lumps. 
+                Mix it well.
+                Cover and cook over a medium-low flame for 3 - 5 minutes or until the rava gets cooked. 
+                Give it a mix and finally add the ghee.
+                Mix until well combined and serve hot.<br><img style="width:230px; margin:auto; display: block;" src="https://th.bing.com/th/id/OIP.zfdX9EINscxySS21tU-P_gHaFi?w=245&h=183&c=7&o=5&dpr=1.25&pid=1.7.jpg"></div>
+            <div class="slide" style="font-size: 20px; background-color: rgb(175, 255, 28); margin: 0 10px 0 10px;padding: 10px;font-size: 16px;" id="slide-2"><h1 style="text-align: center; color: rgb(36, 109, 2);">VEG. SANDWITCH</h1>INGREDIENTS <br>8 Bread Slices
+                1 Beetroot boiled, peeled and thinly sliced
+                1 large sized Tomato thinly sliced
+                1 large sized Onion thinly sliced
+                1 large sized potato boiled, peeled and sliced into rounds
+                1 small Cucumber thinly sliced
+                3 tbsp Mint Coriander Chutney
+                4 tbsp Butter or as needed
+                2 tsp or more Sandwich Masala / Chat Masala<br><br>STEPS<br>Trim the edges of the each bread slice. Apply some butter to it. Then spread a teaspoon of coriander mint chutney over the butter layer.
+                Arrange a few potato slices and sprinkle a little sandwich masala over it.
+                Place 2 cucumber slices and 2 tomato slices and sprinkle a little sandwich masala over it.
+                Then place 2 onion slices and 2 beetroot slices and sprinkle ¼ tsp of sandwich masala / chat masala over it.
+                Cover it with other bread slice and press it lightly.
+                Cut into pieces and serve immediately with mint cilantro chutney or tomato ketchup.<br><BR><br><img style="width:230px;; margin:auto; display: block;" src="https://th.bing.com/th/id/OIP.0MmbFh4KxAE6lhZ8vOMUtwHaEg?w=320&h=195&c=7&o=5&dpr=1.25&pid=1.7.jpg"></div>
+            <div class="slide" style="font-size: 20px; background-color: rgb(146, 219, 253); margin: 0 10px 0 10px;font-size: 16px;padding: 10px;" id="slide-3"><h1 style="text-align: center; color: rgb(82, 8, 255);">MANGO OATS PORRIDGE</h1>INGREDIENTS <br>Peeled and cubed mango : 1 cup
+                Rolled Oats : 2 tbsp
+                Milk : 1 cup
+                Almonds : 5
+                A pinch of cinnamon powder ( Optional )
+                Honey to taste
+                <br><br>STEPS<br>Bring the milk to boil and add the oats.
+                Simmer for 2 minutes, stirring occasionally.
+                Turn off the flame and add
+                the chopped mango, chopped almonds, cinnamon powder and honey. Combine well. Garnish with mango cubes and serve immediately.<br><BR><br><img style="width:230px; margin:auto; display: block;" src="https://th.bing.com/th/id/OIP.MJCUKupV-dfb97JAaZJTgwHaFe?w=206&h=153&c=7&o=5&dpr=1.25&pid=1.7.jpg"></div>
+            
+          </div>
+    </div>
+    <div class="text-area">
+        <a name="lunch">
+    <h2>
+    LUNCH</h2>
+    <p>When people you greatly admire appear to be thinking deep thoughts, they probably are thinking about lunch.</p><p>-Douglas Adams</p>
+    </div>
+</a>
+<!-- ---------------------------------------------------------------------------------------------------------------------------------->
+<!-- ---------------------------------------------------------------------------------------------------------------------------------->
+<!-- ---------------------------------------------------------------------------------------------------------------------------------->
+    <div class="third">
+        <div class="slider">
+            <div class="slidep2" style="font-size: 20px; background-color: rgb(247, 164, 233); margin: 0 10px 0 10px; padding: 10px;font-size: 16px;" id="slide-1"><h1 style="text-align: center; color: rgb(146, 7, 100);">SOYA CHUNKS CURRY</h1>INGREDIENTS <br> ½ cup Soya Chunks
+                1 Small Onion
+                1 tsp Coriander Powder
+                1 tsp Red Chilli Powder
+                1 tsp Ginger Garlic Paste
+                ½ tsp Garam Masala
+                ⅛ tsp Turmeric Powder
+                ½ tsp Cumin Seeds
+                A pinch of Sugar
+                1 tbsp Coriander Leaves chopped
+                1 to 1.5 tbsp Oil
+                Salt to taste<br><br>STEPS<br>Bring water to a boil. Turn off the heat and add the soya chunks and keep it aside for 10 minutes.
+                Then rinse soya chunks with fresh water and squeeze all the water out, Keep the squeezed soya chunks aside.
+                Heat 2 teaspoons of oil in a pan. Add and fry the chopped onion till they are transparent.
+                Grind the sauteed onion and tomatoes to a smooth puree and set aside.
+                Heat a tablespoon of oil in a pan. Add cumin seeds and fry till they begin to change color.
+                Add the ginger garlic paste, finely chopped onion and saute until transparent.
+                Then add the tomato onion puree and combine.
+                Add the coriander powder, red chilli powder, turmeric, sugar, salt and garam masala to it.
+                saute for a couple of minutes.
+                Now add the squeezed soya chunks to the tomato mixture and mix it well.
+                Add water, cover and cook on a low – medium flame for 10 minutes.
+                Turn off the flame and garnish with coriander leaves and serve hot<br><img style="width:230px; margin:auto; display: block;" src="https://th.bing.com/th/id/OIP.EKZ0XgaWFRq7Z5PRtn7mYAHaEK?w=323&h=181&c=7&o=5&dpr=1.25&pid=1.7.jpg"></div>
+            <div class="slidep2" style="font-size: 20px; background-color: rgb(175, 255, 28); margin: 0 10px 0 10px;padding: 10px;font-size: 16px;" id="slide-2"><h1 style="text-align: center; color: rgb(36, 109, 2);">BADAMI PANEER</h1>INGREDIENTS <br>1 cup Paneer Cubes
+                20 Almonds
+                ½ cup Tomato Puree
+                ½ cup Onion
+                1 inch Ginger piece
+                1 tsp Garlic
+                2 tbsp Milk
+                ½ tsp Garam Masala
+                ½ tsp Coriander Powder
+                ½ tsp Cumin Powder
+                ¾ - 1 tsp Red Chilli Powder
+                ⅛ tsp Turmeric Powder
+                5 tbsp Oil<br><br>STEPS<br>Soak almonds in hot water for 15 minutes.
+                Grind the soaked almonds, chopped onions, ginger, garlic and red chillies to a smooth paste and set aside.
+                Marinate the paneer cubes with ½ tsp chilli powder, turmeric powder and salt and keep it aside for few minutes.
+                Heat a tablespoon of oil in a pan and fry the marinated paneer cubes for 1 – 2 minutes.
+                Keep them aside.
+                Heat the remaining oil in a pan and add the ground almond and onion paste.
+                Fry the almond paste for 5 minutes or until the oil separates from the mixture.
+                Add the tomato puree and combine well.
+                Add the garam masala, cumin powder, coriander powder, salt, sugar and red chilli powder to it and mix well.
+                Let it cook over a medium flame for 10 minutes or until the oil separates from the masala.
+                Add the prepared paneer cubes and combine them.
+                Now add milk and mix until well combined.
+                Turn off the flame and serve hot with roti.<br><br><img style="width:230px;; margin:auto; display: block;" src="https://th.bing.com/th/id/OIP.S7wWwJ5KJlhJV97XNFgsrgHaFE?w=206&h=141&c=7&o=5&dpr=1.25&pid=1.7.jpg"></div>
+            <div class="slidep2" style="font-size: 20px; background-color: rgb(247, 164, 233); margin: 0 10px 0 10px;font-size: 16px;padding: 10px;" id="slide-3"><h1 style="text-align: center; color: rgb(146, 7, 100);">RAJMA PAALAK</h1>INGREDIENTS <br>Pinto Beans / Chitra Rajma: ½ cup
+                Chopped Spinach : 2 cups, packed
+                Onion : 1 big size
+                Tomato 1
+                Ginger Garlic Paste : 1 tsp
+                Garam Masala : 1 tsp
+                Cumin Seeds : ¼ tsp
+                Turmeric Powder : ⅛ tsp
+                Oil : 1 tbsp
+                Red Chilli Powder: 1 tsp or to taste
+                Salt to taste<br><BR>STEPS<br>Wash, rinse and soak the pinto beans in lot of water overnight.Drain water
+                    and pressure cook for 3 whistles. Drain and keep the cooked beans aside.Blanch the spinach in boiling water
+                    for a few minutes and drain the excess water. Grind the blanched spinach
+                    and chopped tomato to a puree and set aside. Heat oil in a wok and add
+                    the cumin seeds and let them splutter. Now add the ginger garlic paste
+                    and fry till the raw smell goes off. Add the chopped onions and fry till
+                    the onions are translucent. Add the spinach puree, little water, salt, turmeric
+                    powder, garam masala and red chilli powder and cook for 5 minutes. Then
+                    add the cooked beans and cook for another couple of minutes. Remove from
+                    the flame and serve hot with roti.<br><img style="width:230px; margin:auto; display: block;" src="https://th.bing.com/th/id/OIP.c-kFiPswWniU77ltu2UBxgHaE7?w=241&h=180&c=7&o=5&dpr=1.25&pid=1.7.jpg"></div>
+            
+          </div>
+    </div>
+    <div class="text-area">
+        <a name="snacks">
+    <h2>
+    Snacks</h2>
+    <p>
+    One of the secrets of a happy life is continuous small treats</p>
+    </div>
+</a>
+<!-- ---------------------------------------------------------------------------------------------------------------------------------->
+<!-- ---------------------------------------------------------------------------------------------------------------------------------->
+<!-- ---------------------------------------------------------------------------------------------------------------------------------->
+    <div class="fourth">
+        <div class="slider">
+            <div class="slidep3" style="font-size: 20px; background-color: rgb(247, 181, 164); margin: 0 10px 0 10px; padding: 10px;font-size: 16px;" id="slide-1"><h1 style="text-align: center; color: rgb(184, 6, 6);">MATAR CHAT</h1>INGREDIENTS <br> 1 cup Green Peas fresh or frozen
+                ¼ cup Chopped Tomatoes
+                ¼ cup Chopped Onion
+                2 tbsp Coriander Leaves
+                ½ tsp Roasted Cumin Powder
+                ½ tsp Amchur / Dry Mango Powder
+                ¾ tsp Chaat Masala
+                ¼ tsp Red Chilli Powder (optional)
+                1 Green Chilli chopped
+                1-2 tsp Lemon Juice
+                Salt to taste
+                Sev or Aloo Bhujia to serve (optional)<br><br>STEPS<br>Combine green peas and water in a pan or vessel and cover with a lid.
+                Let it cook for 10-15 minutes or until peas are soft.
+                Turn off the flame and drain them completely.
+                Transfer the cooked peas to a bowl and add the remaining ingredients.
+                Mix everything well and serve warm immedietely.<br><img style="width:230px; margin:auto; display: block;" src="https://www.blendwithspices.com/wp-content/uploads/2020/02/matar-chaat-recipe-320x320.jpg"></div>
+            <div class="slidep3" style="font-size: 20px; background-color: rgb(247, 164, 233); margin: 0 10px 0 10px;padding: 10px;font-size: 16px;" id="slide-2"><h1 style="text-align: center; color: rgb(146, 7, 100);">MIXED FRUIT YOGURT PARFAIT</h1>INGREDIENTS <br>6 tbsp Yogurt
+                Assorted Fruits (I used ½ apple, 4 Strawberries, 1 Peach, 1 Pear, 1 Banana and handful of Grapes)
+                ¼ tsp Vanilla Essence
+                1-2 tbsp Sugar / Honey (or as needed)
+                5 tbsp Oil<br><br>STEPS<br>In a mixing bowl, combine the yogurt, vanilla essence and sugar / honey and keep it aside.
+                Wash, peel and chop the fruits into pieces.
+                To assemble parfaits, layer some prepared yogurt into the serving glass. 
+                Top the yogurt layer with some chopped fruits.
+                Repeat the layers until glasses are filled to the top.
+                Serve immediately or chilled.<br><br><img style="width:230px;; margin:auto; display: block;" src="https://www.blendwithspices.com/wp-content/uploads/2017/08/mixed-fruit-yogurt-parfait-recipe-320x320.jpg"></div>
+            <div class="slidep3" style="font-size: 20px; background-color: rgb(247, 181, 164); margin: 0 10px 0 10px;font-size: 16px;padding: 10px;" id="slide-3"><h1 style="text-align: center; color: rgb(184, 6, 6);">FRIED BABYCORN</h1>INGREDIENTS <br>1 tsp Oil
+                6 Baby Corn
+                Salt to taste
+                Oil for frying
+                Pepper to taste
+                2 tbsp Maida
+                2 tbsp Corn Flour
+                ¼ tsp Baking Powder
+                A pinch of Ajinomoto<br><BR>STEPS<br>Heat oil in a frying pan. Cut each baby corn into three pieces.
+                    Mix corn flour, all-purpose flour, oil, baking powder, ajinomoto, salt, and pepper well in a bowl.
+                    Add enough water to the above to make a smooth thick batter.
+                    Dip the baby corn pieces in the batter, and fry them until they turn golden brown.
+                    Golden Fried Baby Corn is ready to eat. Serve hot with chilli sauce.<br><BR><img style="width:230px; margin:auto; display: block;" src="http://www.indobase.com/recipes/rec-images/golden-fried-baby-corn.jpg"></div>
+ <div class="slidep3" style="font-size: 20px; background-color: rgb(247, 164, 233); margin: 0 10px 0 10px;padding: 10px;font-size: 16px;" id="slide-2"><h1 style="text-align: center; color: rgb(146, 7, 100);">SWEET CORN AND PANEER VADA</h1>INGREDIENTS <br>Sweet Corn : 1 cup
+    Crumbled Paneer / Cottage Cheese : 1/ 2 cup (You can also make paneer at home)
+    Onion : 1 small sized
+    Besan / Chickpea Flour : 3 tbsp
+    Rice Flour : 1 tbsp
+    Green Chillies : 3
+    Ginger : 2 inch piece
+    Cilantro / Coriander Leaves
+    Salt to taste
+    Oil for deep frying<br><br>STEPS<br>Grind
+    the sweet corn, green chillies and ginger into a paste.Combine the
+    ground sweet corn, paneer, chickpea flour, rice flour, chopped onion,
+    chopped cilantro and salt in a mixing bowl. Mix very well and set aside.Heat oil in a deep frying pan. Apply little oil or
+    water on palm and take a small amount of corn mixture, flatten
+    lightly with fingers and drop it into hot oil.Deep fry them until golden brown color and crispy and remove from the
+    oil.Serve on a cloudy day with a cup of hot coffee or tea.<br><br><img style="width:230px;; margin:auto; display: block;" src="https://th.bing.com/th/id/OIP.mNQ-F60MIugAVJVzQ78pJwHaFj?w=241&h=181&c=7&o=5&dpr=1.25&pid=1.7.jpg"></div>
+             </div>
+    </div>
+    <div class="text-area">
+        <a name="din">
+    <h2>
+    DINNER</h2>
+    <p>The fondest memories are made gathered around the table</p>
+     </div>
+</a>
+<!-- ---------------------------------------------------------------------------------------------------------------------------------->
+<!-- ---------------------------------------------------------------------------------------------------------------------------------->
+<!-- ---------------------------------------------------------------------------------------------------------------------------------->
+    <div class="fifth">
+        <div class="slider">
+            <div class="slidep4" style="font-size: 20px; background-color: rgb(146, 219, 253); margin: 0 10px 0 10px; padding: 10px;font-size: 16px;" id="slide-1"><h1 style="text-align: center; color: rgb(82, 8, 255);">VEG FRIED RICE</h1>INGREDIENTS <br>3 cups water
+                1 ½ cups quick-cooking brown rice
+                2 tablespoons peanut oil
+                1 small yellow onion, chopped
+                1 small green bell pepper, chopped
+                1 teaspoon minced garlic
+                ¼ teaspoon red pepper flakes
+                3 green onions, thinly sliced
+                3 tablespoons soy sauce
+                1 cup frozen petite peas
+                2 teaspoons sesame oil<br><br>STEPS<br>In a saucepan bring water to a boil. Stir in rice. Reduce heat, cover and simmer for 20 minutes.
+                Meanwhile, heat peanut oil in a large skillet or wok over medium heat. Add onions, bell pepper, garlic and pepper flakes, to taste. Cook 3 minutes, stirring occasionally.
+                Increase heat to medium-high and stir in cooked rice, green onions and soy sauce. Stir-fry for 1 minute. Add peas and cook 1 minute more. Remove from heat. Add sesame oil and mix well. Garnish with peanuts, if desired.<br><br><img style="width:230px; margin:auto; display: block;" src="https://th.bing.com/th/id/OIP.b_loYSEeEaV1rNevLAsBIgHaE8?w=206&h=138&c=7&o=5&dpr=1.25&pid=1.7.jpg"></div>
+            <div class="slidep4" style="font-size: 20px; background-color: rgb(247, 181, 164); margin: 0 10px 0 10px;padding: 10px;font-size: 16px;" id="slide-2"><h1 style="text-align: center; color: rgb(184, 6, 6);">BISIBELE BATH</h1>INGREDIENTS <br>4 tsp coriander seeds
+                ,4 tsp chana dal
+                ,2 tsp urad dal
+                ,1 tsp jeera / cumin
+                ,¼ tsp methi / fenugreek seeds
+                ,½ tsp pepper
+                ,3 pods cardamom / elachi
+                ,1 inch cinnamon / dalchini
+                ,4 cloves / lavang
+                ,2 tbsp dry coconut / copra
+                ,2 tsp poppy seeds / khus khus
+                ,1 tsp sesame seeds / til
+                ,1 tsp oil
+                ,12 dried kashmiri red chilli
+                ,few curry leaves
+                ,pinch of hing / asafoetida
+                ,½ carrot (chopped)
+                ,5 beans (chopped)
+                ,2 tbsp matar / peas
+                ,½ potato / aloo (cubed)
+                ,2 tbsp peanuts
+                ,2 cups water
+                ,¼ tsp turmeric / haldi
+                ,1½ tsp salt
+                ,¾ cup tamarind extract
+                ,½ tsp jaggery / gud
+                ,½ onions (petals)
+                ,1 cup toor dal (cooked)
+                ,2½ cup rice (cooked)
+                ,1 cup water
+                ,1 tbsp ghee / clarified butter
+                ,2 tbsp ghee / clarified butter
+                ,1 tsp mustard / rai
+                ,1 dried red chilli
+                ,pinch of hing / asafoetida
+                ,few curry leaves
+                ,10 whole cashew / kaju<br><br>STEPS<br>firstly, cook vegetables, 2 tbsp peanuts, 2 cups water, ¼ tsp turmeric and 1 tsp salt.
+                now add ¾ cup tamarind extract, ½ tsp jaggery and ½ onions. boil for 10 mins.
+                further add 1 cup of cooked toor dal, 2½ cup of cooked rice and 1 cup water.
+                add 4 tsp of bisi bisi bele bath masala and simmer for 20 mins.
+                pour the tempering and serve bisi bele bath with boodi or mixture.
+                <br><img style="width:170px;; margin:auto; display: block;" src="https://th.bing.com/th/id/OIP.lJcQj1_-G38d9ooDVyL6uwHaHa?w=173&h=180&c=7&o=5&dpr=1.25&pid=1.7.jpg"></div>
+           
+    </div>
+    
+</body>
+</html>
